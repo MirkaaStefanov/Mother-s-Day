@@ -1,0 +1,73 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #F8C8DC;
+}
+
+/* Position the "No" button absolutely within body */
+
+
+#yesButton {
+    position: relative; /* Променено на relative, за да може top да работи */
+    top: 50%; /* Премества бутона на 50% от височината на родителя */
+    transform: translateY(-50%); /* Коригира позицията на бутона, за да бъде точно по центъра */
+    font-weight: bold;
+    font-style: initial;
+    align-items: center;
+    size: 100px; 
+    font-size: 24px; /* Променете големината на шрифта според нуждите ви */
+    padding: 20px 40px;
+    /* Smooth movement */
+}
+
+.header_text {
+    font-family: 'Nunito';
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+
+
+    /* optional: adds some space between the buttons */
+}
+
+.btn {
+    background-color: #FFB6C1;
+    color: white;
+    padding: 15px 32px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+    height: 10%;
+
+}
+
+.btn:hover {
+    background-color: #FAF9F6;
+}
+
+.gif_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 90px;
+}
